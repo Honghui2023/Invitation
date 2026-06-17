@@ -130,7 +130,10 @@ button:hover {transform: translateY(-2px);}
 .card {
     position: absolute;
     z-index: 4;
-    width: min(92vw, 520px);
+    /* width: min(92vw, 520px); */
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
     padding: 36px 28px;
     border-radius: 28px;
     background: rgba(15, 12, 9, .92);
@@ -141,6 +144,12 @@ button:hover {transform: translateY(-2px);}
     pointer-events: none;
     transition: .85s cubic-bezier(.2, .9, .2, 1.2);
     backdrop-filter: blur(12px);
+}
+
+.logo {
+    width: 100;
+    max-width: 400px;
+    height: auto;
 }
 
 /* Show card */
