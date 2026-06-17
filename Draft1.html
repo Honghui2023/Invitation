@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>我们的鼓事3宴会邀请函</title>
+        <link rel="stylesheet" href="Draft1.css">
+    </head>
+    <body>
+        <div class="stage">
+            
+            <div class="light center"></div>
+            <div class="light left"></div>
+            <div class="light right"></div>
+            <div class="light right2"></div>
+
+            <section class="intro" id=intro>
+                <div class="drum" id=drum>
+                    <img src="logo.png" alt="logo" width="450">
+                </div>
+
+                <h1>我们的鼓事3 · Our Drum Story 3</h1>
+                <div class="startword">
+                    点击鼓面 · 开启邀请函
+                </div>
+                <button id="openBtn">
+                    接受邀请
+                </button>
+            </section>
+
+            <section class="card" id=card>
+                <h2>沙登鼓社 Serdang Drum Club</h2>
+                <h3>我们的鼓事3宴会邀请函</h3>
+                <div class="line"></div>
+
+                <p class="text">
+                    一面鼓，一群人，一段正在开始的故事。<br/>
+                    诚邀您出席我们的宴会，一起见证新的开始。
+                </p>
+                <div class="line"></div>
+
+                <div class="details">
+                    📅 日期：2026年 7月 17日 <br/>
+                    🕖 时间：晚上 7：00 <br/>
+                    📍 地点：<a href = "https://www.google.com/maps/dir//SK+Times+Cafe+%E2%80%A2+%E6%97%B6%E5%85%89%E5%A4%A9%E5%8F%B0,+37,+Jalan+Jinma+3,+Taman+Jinma,+43300+Seri+Kembangan,+Selangor/@3.0375936,101.6864131,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31cdb5698bb01457:0xfe7a21f3df4777a6!2m2!1d101.7010242!2d3.015518?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target = "_blank">时光天台</a>
+                </div>
+                
+                <div class="line"></div>
+                <button onclick= "window.open('https://quikrsvp.com/3-7yzh')">确认出席</button>
+                <br/>
+                <button class="close" id="closeBtn">
+                    关闭
+                </button>
+
+            </section>
+        </div>
+
+        <!-- Connect to JavaScript-->
+         <script src="script.js"></script>
+    </body>
+
+</html>
+
+
+<!--Example
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>沙登鼓社宴会邀请函 Demo</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background: radial-gradient(circle at top, #3b0000 0%, #090909 45%, #000 100%);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .stage {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .light {
+      position: absolute;
+      top: -120px;
+      width: 260px;
+      height: 900px;
+      background: linear-gradient(to bottom, rgba(255,220,120,0.22), rgba(255,220,120,0));
+      filter: blur(8px);
+      transform-origin: top center;
+      animation: swing 5s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    .light.left { left: 10%; transform: rotate(24deg); }
+    .light.right { right: 10%; transform: rotate(-24deg); animation-delay: 1s; }
+
+    @keyframes swing {
+      from { transform: rotate(18deg); opacity: .55; }
+      to { transform: rotate(-18deg); opacity: .9; }
+    }
+
+    .intro {
+      position: relative;
+      z-index: 2;
+      transition: .7s ease;
+    }
+
+    .drum {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, #8b1a1a 0%, #4a0505 58%, #1b0101 60%, #d9a441 64%, #542100 72%);
+      border: 8px solid #c88b2d;
+      box-shadow: 0 0 35px rgba(255, 181, 58, .45), inset 0 0 30px rgba(0,0,0,.55);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      user-select: none;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.045); }
+    }
+
+    .hit {
+      animation: hit .26s ease;
+    }
+
+    @keyframes hit {
+      0% { transform: scale(1); }
+      45% { transform: scale(.92) rotate(-2deg); }
+      100% { transform: scale(1.06) rotate(2deg); }
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 6vw, 72px);
+      letter-spacing: 4px;
+    }
+
+    .sub {
+      margin: 12px 0 28px;
+      font-size: clamp(16px, 2vw, 22px);
+      color: #f6d58b;
+      letter-spacing: 2px;
+    }
+
+    button {
+      border: 0;
+      padding: 14px 30px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #d6a545, #fff0aa, #b8791b);
+      color: #1a0b00;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 10px 28px rgba(255, 194, 78, .25);
+    }
+
+    button:hover { transform: translateY(-2px); }
+
+    .card {
+      position: absolute;
+      z-index: 4;
+      width: min(92vw, 520px);
+      padding: 36px 28px;
+      border-radius: 28px;
+      background: rgba(15, 12, 9, .92);
+      border: 1px solid rgba(255, 210, 120, .5);
+      box-shadow: 0 0 60px rgba(255, 194, 78, .25);
+      transform: translateY(80px) scale(.88);
+      opacity: 0;
+      pointer-events: none;
+      transition: .85s cubic-bezier(.2, .9, .2, 1.2);
+      backdrop-filter: blur(12px);
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      color: #ffd77a;
+      letter-spacing: 2px;
+    }
+
+    .card h3 {
+      margin: 0 0 22px;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #ffd77a, transparent);
+      margin: 22px 0;
+    }
+
+    .details {
+      text-align: left;
+      max-width: 340px;
+      margin: 0 auto;
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    .quote {
+      margin: 18px auto 0;
+      color: #f2d7a0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .hidden { opacity: 0; transform: scale(.95); pointer-events: none; }
+
+    .confetti span {
+      position: absolute;
+      top: -20px;
+      width: 8px;
+      height: 14px;
+      background: #ffd77a;
+      animation: fall 2.4s linear forwards;
+    }
+
+    @keyframes fall {
+      to { transform: translateY(110vh) rotate(520deg); opacity: 0; }
+    }
+
+    .close {
+      margin-top: 22px;
+      background: transparent;
+      color: #ffd77a;
+      border: 1px solid rgba(255, 215, 122, .55);
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <div class="light left"></div>
+    <div class="light right"></div>
+
+    <section class="intro" id="intro">
+      <div class="drum" id="drum">53</div>
+      <h1>鼓事53</h1>
+      <div class="sub">点击鼓面 · 开启邀请函</div>
+      <button id="openBtn">接受邀请</button>
+    </section>
+
+    <section class="card" id="card">
+      <h2>沙登鼓社 Serdang Drum Club</h2>
+      <h3>宴会邀请函</h3>
+      <div class="line"></div>
+
+      <p class="quote">
+        一面鼓，一群人，一段正在开始的故事。<br />
+        诚邀您出席我们的宴会，一起见证新的开始。
+      </p>
+
+      <div class="line"></div>
+
+      <div class="details">
+        📅 日期：2026年 __ 月 __ 日<br />
+        🕖 时间：晚上 7:00<br />
+        📍 地点：____________________<br />
+        👕 服装：Smart Casual / 黑金主题<br />
+        🔗 RSVP：请于 __ 月 __ 日前回复
+      </div>
+
+      <div class="line"></div>
+      <button onclick="alert('这里可以连接 Google Form / WhatsApp RSVP')">确认出席 RSVP</button>
+      <br />
+      <button class="close" id="closeBtn">关闭</button>
+    </section>
+
+    <div class="confetti" id="confetti"></div>
+  </main>
+
+  <script>
+    const drum = document.getElementById('drum');
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const intro = document.getElementById('intro');
+    const card = document.getElementById('card');
+    const confetti = document.getElementById('confetti');
+
+    function openInvite() {
+      drum.classList.add('hit');
+      setTimeout(() => drum.classList.remove('hit'), 300);
+
+      setTimeout(() => {
+        intro.classList.add('hidden');
+        card.classList.add('show');
+        makeConfetti();
+      }, 320);
+    }
+
+    function closeInvite() {
+      card.classList.remove('show');
+      intro.classList.remove('hidden');
+    }
+
+    function makeConfetti() {
+      confetti.innerHTML = '';
+      for (let i = 0; i < 38; i++) {
+        const s = document.createElement('span');
+        s.style.left = Math.random() * 100 + 'vw';
+        s.style.animationDelay = Math.random() * .8 + 's';
+        s.style.opacity = Math.random() + .35;
+        confetti.appendChild(s);
+      }
+    }
+
+    drum.addEventListener('click', openInvite);
+    openBtn.addEventListener('click', openInvite);
+    closeBtn.addEventListener('click', closeInvite);
+  </script>
+</body>
+</html>
+'''
+
+path = Path("/mnt/data/sdc_animated_invitation_demo.html")
+path.write_text(html, encoding="utf-8")
+path.as_posix()
+
+-->
