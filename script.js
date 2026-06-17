@@ -20,7 +20,7 @@ function openInvitation() {
       setTimeout(() => {
         intro.classList.add('hidden');
         card.classList.add('show');
-        makeConfetti();
+        // makeConfetti();
       }, 320);
 }
 
