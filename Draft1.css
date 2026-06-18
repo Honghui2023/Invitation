@@ -225,90 +225,37 @@ a:hover {
 }
 
 
-/* Mobile Version Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
-    .stage {
-        padding: 15px;
-    }
-
-    /* Light effects smaller */
-    .light {
-        width: 100px;
-        height: 600px;
-    }
-
-    .light.center,
-    .light.right2 {
-        display: none;
-    }
-
-    /* Drum/logo container */
     .drum {
-        width: 84vw;
-        max-width: 350px;
-        height: auto;
-        min-height: 220px;
-        margin: 30px auto;
-        padding: 20px;
-    }
-
-    .logo {
-        width: 100% !important;
-        max-width: 250px;
-        height: auto;
+        max-width: 300px;
+        min-height: 200px;
     }
 
     h1 {
-        font-size: 28px;
-        margin-top: -20px;
-        letter-spacing: 1px;
+        font-size: 24px;
     }
 
     .startword {
-        font-size: 20px;
-        margin-top: 10px;
+        font-size: 18px;
     }
 
-    button {
-        font-size: 20px;
-        padding: 12px 24px;
-    }
-
-    /* Invitation Card */
-    .card {
-        width: 80vw;
-        padding: 25px 18px;
-        border-radius: 20px;
+    .text,
+    .details {
+        font-size: 16px;
     }
 
     .card h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .card h3 {
+        font-size: 16px;
+    }
+
+    button {
         font-size: 18px;
-    }
-
-    .text {
-        font-size: 18px;
-    }
-
-    .details {
-        font-size: 18px;
-        max-width: 100%;
-        line-height: 1.6;
-    }
-
-    .close {
-        font-size: 14px;
-    }
-
-    a {
-        word-break: break-word;
+        width: 100%;
+        max-width: 220px;
     }
 }
