@@ -225,9 +225,7 @@ a:hover {
 }
 
 
-/* =========================
-   Mobile Responsive Design
-   ========================= */
+/* Mobile Version Design */
 @media screen and (max-width: 768px) {
 
     body {
@@ -251,7 +249,7 @@ a:hover {
 
     /* Drum/logo container */
     .drum {
-        width: 90vw;
+        width: 88vw;
         max-width: 350px;
         height: auto;
         min-height: 220px;
@@ -304,9 +302,6 @@ a:hover {
         font-size: 18px;
         max-width: 100%;
         line-height: 1.6;
-    }
-
-    a:link {
         color: #ffff;
     }
 
