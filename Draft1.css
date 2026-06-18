@@ -283,7 +283,7 @@ a:hover {
 
     /* Invitation Card */
     .card {
-        width: 88vw;
+        width: 80vw;
         padding: 25px 18px;
         border-radius: 20px;
     }
@@ -304,6 +304,10 @@ a:hover {
         font-size: 18px;
         max-width: 100%;
         line-height: 1.6;
+    }
+
+    a:link {
+        color: #ffff;
     }
 
     .close {
