@@ -1,18 +1,11 @@
 // Find HTML elements
 
 const drum = document.getElementById("drum");
-
-const openBtn = document.getElementById("openBtn");
-
 const closeBtn = document.getElementById("closeBtn");
-
 const intro = document.getElementById("intro");
-
 const card = document.getElementById("card");
 
-
 // Open invitation
-
 function openInvitation() {
     drum.classList.add('hit');
       setTimeout(() => drum.classList.remove('hit'), 300);
@@ -32,12 +25,6 @@ function closeInvitation() {
 
 // Click drum
 drum.addEventListener(
-    "click",
-    openInvitation
-);
-
-// Click butto
-openBtn.addEventListener(
     "click",
     openInvitation
 );
