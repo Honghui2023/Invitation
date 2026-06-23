@@ -258,6 +258,7 @@ a:hover {
         min-height: 220px;
         margin: 30px auto;
         padding: 20px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     .logo {
@@ -270,16 +271,19 @@ a:hover {
         font-size: 28px;
         margin-top: -20px;
         letter-spacing: 1px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     .startword {
         font-size: 20px;
         margin-top: 10px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     button {
         font-size: 20px;
         padding: 12px 24px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     /* Invitation Card */
@@ -291,24 +295,29 @@ a:hover {
 
     .card h2 {
         font-size: 20px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     .card h3 {
         font-size: 16px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     .text {
         font-size: 14px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     .details {
         font-size: 16px;
         max-width: 100%;
         line-height: 1.6;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     .close {
         font-size: 14px;
+        font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
 
     a {
