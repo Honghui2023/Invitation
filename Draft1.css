@@ -188,7 +188,7 @@ button:hover {transform: translateY(-2px);}
     max-width: 340px;
     margin: 0 auto;
     line-height: 1.7;
-    font-size: 22px;
+    font-size: 20.7px;
     font-family: "KaiTi", "楷体", "STKaiti", serif;
 }
 
@@ -204,7 +204,7 @@ a:hover {
 .text {
     margin: 15px auto 0;
     color: #f2d7a0;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.5;
     font-family: "KaiTi", "楷体", "STKaiti", serif;
 }
