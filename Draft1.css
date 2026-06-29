@@ -183,6 +183,7 @@ button:hover {transform: translateY(-2px);}
     line-height: 1.7;
     font-size: 20.7px;
     font-family: "KaiTi", "楷体", "STKaiti", serif;
+    color: #ffff;
 }
 
 a:link {
