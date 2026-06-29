@@ -192,12 +192,12 @@ button:hover {transform: translateY(-2px);}
 }
 
 .details a:hover {
-    color: #e74c3c; /* Red */
+    color: #f4d35e;
     text-decoration: underline; /* Adds underline back on hover */
 }
 
 .details a:active {
-    color: #e74c3c;
+    color: #f4d35e;
 }
 
 .text {
@@ -330,10 +330,24 @@ button:hover {transform: translateY(-2px);}
         font-size: 14px;
         font-family: "KaiTi", "楷体", "STKaiti", serif;
     }
-
-    a {
+    
+    /* .details a {
         word-break: break-word;
+        color: #f4d35e;
+    } */
+
+    .details a:link,
+    .details a:visited {
         color: #ffff;
+    }
+
+    .details a:hover {
+        color: #f4d35e;
+        text-decoration: underline; /* Adds underline back on hover */
+    }
+
+    .details a:active {
+        color: #f4d35e;
     }
 }
 
