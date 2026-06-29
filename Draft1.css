@@ -186,13 +186,18 @@ button:hover {transform: translateY(-2px);}
     color: #ffff;
 }
 
-a:link {
+.details a:link,
+.details a:visited {
     color: #ffff;
 }
 
-a:hover {
+.details a:hover {
     color: #e74c3c; /* Red */
     text-decoration: underline; /* Adds underline back on hover */
+}
+
+.details a:active {
+    color: #e74c3c;
 }
 
 .text {
